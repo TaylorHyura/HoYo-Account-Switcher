@@ -176,6 +176,8 @@ echo ^|                    Game locations                    ^|
 echo ^+------------------------------------------------------^+
 echo ^|
 
+if not exist Directories md Directories
+
 cd Directories
 
 set genshinLocation=GenshinImpact.txt
