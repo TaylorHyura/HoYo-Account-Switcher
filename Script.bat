@@ -66,6 +66,7 @@ cd Accounts\GenshinImpact
 >"%accountName%".bat (
 	echo @echo off
 	echo REG ADD "HKCU\SOFTWARE\miHoYo\Genshin Impact" /v MIHOYOSDK_ADL_PROD_OVERSEA_h1158948810 /t REG_BINARY /d %account% /f
+	echo %gameLocation:~0,2%
 	echo cd %gameLocation%
 	echo start launcher.exe
 	echo exit
@@ -137,6 +138,7 @@ cd Accounts\HonkaiStarRail
 >"%accountName%".bat (
 	echo @echo off
 	echo REG ADD "HKCU\SOFTWARE\Cognosphere\Star Rail" /v MIHOYOSDK_ADL_PROD_OVERSEA_h1158948810 /t REG_BINARY /d %account% /f
+	echo %gameLocation:~0,2%
 	echo cd %gameLocation%
 	echo start launcher.exe
 	echo exit
